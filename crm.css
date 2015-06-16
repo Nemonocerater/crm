@@ -1,0 +1,34 @@
+/* CSS declarations go here */
+
+header {
+	padding: 10px;
+	background-color: #eee;
+	margin-bottom: 10px;
+}
+
+header > * {
+	display: inline-block;
+}
+
+#login-buttons {
+	float: right;
+	padding: 20px;
+}
+
+#login-dropdown-list {
+	left: auto;
+	right: 0;
+}
+
+table {
+	width: 98%;
+	margin: auto;
+}
+
+table > tr:first-child {
+	background-color: #ddd;
+}
+
+table > tr:nth-child(odd) {
+	background-color: #eee;
+}

@@ -1,0 +1,33 @@
+<head>
+	<title>crm</title>
+</head>
+
+<body>
+	<header>
+		<h1>CRM</h1>
+		{{> loginButtons}}
+	</header>
+
+	<form class="new-person">
+		Name: <input type="name" name="name" /> <br />
+		Email: <input type="email" name="email" /> <br />
+		<input type="submit" value="Submit" />
+	</form>
+
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>Email</td>
+		</tr>
+		{{#each people}}
+			{{> person}}
+		{{/each}}
+	</table>
+</body>
+
+<template name="person">
+	<tr>
+		<td>{{name}}</td>
+		<td>{{email}}</td>
+	</tr>
+</template>
